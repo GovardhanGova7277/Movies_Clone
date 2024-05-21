@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a10c01b2d1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="menus">
+      <div class="containers">
+        <nav>
+          <a href="index.html">
+            <div class="logo">
+              <img src="images/logo.png" alt="Netflix" />
+            </div>
+          </a>
+          <form id="form" autocomplete="off">
+            <input type="text" placeholder="Search" id="Search" />
+          </form>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Movies</a></li>
+            <li><a href="#tv_shows">TV Shows</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <header>
+      <div class="slide-container">
+        <div
+          class="slide active"
+          style="background-image: url('./images/tv-shows1.jpg')"
+        >
+          <div class="slide-content active">
+            <h2 class="movies-title">Breaking Bad (2008)</h2>
+            <p class="movies-short-details">
+              When Walter White, a New Mexico chemistry teacher, is diagnosed
+              with Stage III cancer and given a prognosis of only two years left
+              to live.
+            </p>
+            <div class="m_details">
+              <p class="category">Crime</p>
+              <p class="category">Drama</p>
+              <p class="year-time">5 Seasons</p>
+            </div>
+            <button type="button">
+              <i class="fa far fa-play-circle"></i>
+              Watch Now
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="slide active"
+          style="background-image: url('./images/tv-shows2.jpg')"
+        >
+          <div class="slide-content">
+            <h2 class="movies-title">Game of Thrones (2011)</h2>
+            <p class="movies-short-details">
+              Seven noble families fight for control of the mythical land of
+              Westeros. Friction between the houses leads to full-scale war. All
+              while a very ancient evil awakens in the farthest north.
+            </p>
+            <div class="m_details">
+              <p class="category">Adventure</p>
+              <p class="category">Sci-Fi & Fantasy</p>
+              <p class="year-time">Season 8</p>
+            </div>
+            <button type="button">
+              <i class="fa far fa-play-circle"></i>
+              Watch Now
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="slide active"
+          style="background-image: url('./images/tv-shows3.jpg')"
+        >
+          <div class="slide-content">
+            <h2 class="movies-title">ONE PIECE (2023)</h2>
+            <p class="movies-short-details">
+              With his straw hat and ragtag crew, young pirate Monkey D. Luffy
+              goes on an epic voyage for treasure.
+            </p>
+            <div class="m_details">
+              <p class="category">Adventure</p>
+              <p class="category">Sci-Fi</p>
+              <p class="year-time">Season 1</p>
+            </div>
+            <button type="button">
+              <i class="fa far fa-play-circle"></i>
+              Watch Now
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="slide active"
+          style="background-image: url('./images/tv-shows4.jpg')"
+        >
+          <div class="slide-content">
+            <h2 class="movies-title">Vikings (2013)</h2>
+            <p class="movies-short-details">
+              The adventures of Ragnar Lothbrok, the greatest hero of his age.
+              The series tells the sagas of Ragnar's band of Viking brothers and
+              his family, as he rises to become King of the Viking tribes
+            </p>
+            <div class="m_details">
+              <p class="category">War & Politics</p>
+              <p class="category">Documentary</p>
+              <p class="year-time">Season 6</p>
+            </div>
+            <button type="button">
+              <i class="fa far fa-play-circle"></i>
+              Watch Now
+            </button>
+          </div>
+        </div>
+        <button class="arrow -left-arrow" id="left">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="arrow -right-arrow" id="right">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </header>
+    <div class="movies-content" id="tv_shows">
+      <div class="container">
+        <h2 class="label">Tv Shows</h2>
+        <div class="Tv-details">
+          <!-- <div class="tvShows">
+            <img src="images/image1.jpg" alt="" />
+            <p class="movie-title">Joker</p>
+            <div class="short-desc">
+              <p class="year">2019</p>
+              <p class="rating">0.9</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- pagination -->
+    <div class="container">
+      <div class="paginations">
+        <ul>
+          <li>Previous</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>Next</li>
+        </ul>
+      </div>
+    </div>
+    <script defer src="app.js"></script>
+    <script defer src="js/main.js"></script>
+  </body>
+</html>

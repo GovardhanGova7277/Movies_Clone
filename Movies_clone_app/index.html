@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a10c01b2d1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="menus">
+      <div class="containers">
+        <nav>
+          <a href="index.html">
+            <div class="logo">
+              <img src="images/logo.png" alt="Netflix" />
+            </div>
+          </a>
+          <form id="form" autocomplete="off">
+            <input type="text" placeholder="Search" id="Search" />
+          </form>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="tv_shows.html">TV Shows</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <header>
+      <div class="slide-container">
+        <div
+          class="slide active"
+          style="background-image: url('./images/image1.jpg')"
+        >
+          <div class="slide-content active">
+            <h2 class="movies-title">Joker(2019)</h2>
+            <p class="movies-short-details">
+              During the 1980s, a failed stand-up comedian is driven insane and
+              turns to a life of crime and chaos in Gotham City while becoming
+              an infamous psychopathic crime figure.
+            </p>
+            <div class="m_details">
+              <p class="category">Crime</p>
+              <p class="category">Thriller</p>
+              <p class="year-time">2h 02m</p>
+            </div>
+            <button type="button">
+              <i class="fa far fa-play-circle"></i>
+              Watch Now
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="slide active"
+          style="background-image: url('./images/image2.jpg')"
+        >
+          <div class="slide-content">
+            <h2 class="movies-title">Oppenheimer (2023)</h2>
+            <p class="movies-short-details">
+              The story of J. Robert Oppenheimer's role in the development of
+              the atomic bomb during World War II.
+            </p>
+            <div class="m_details">
+              <p class="category">Drama</p>
+              <p class="category">History</p>
+              <p class="year-time">3h 01m</p>
+            </div>
+            <button type="button">
+              <i class="fa far fa-play-circle"></i>
+              Watch Now
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="slide active"
+          style="background-image: url('./images/image3.jpg')"
+        >
+          <div class="slide-content">
+            <h2 class="movies-title">Bahubali (2015)</h2>
+            <p class="movies-short-details">
+              Abandoned as a baby with exceptional abilities, Shivudu joins
+              warrior princess Avanthika to rescue her queen held captive for 25
+              years, unraveling his own mysterious origins in the process.
+            </p>
+            <div class="m_details">
+              <p class="category">Action</p>
+              <p class="category">Adventure</p>
+              <p class="year-time">2h 39m</p>
+            </div>
+            <button type="button">
+              <i class="fa far fa-play-circle"></i>
+              Watch Now
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="slide active"
+          style="background-image: url('./images/image4.jpg')"
+        >
+          <div class="slide-content">
+            <h2 class="movies-title">RRR (2022)</h2>
+            <p class="movies-short-details">
+              A fictional history of two legendary revolutionaries' journey away
+              from home before they began fighting for their country in the
+              1920s.
+            </p>
+            <div class="m_details">
+              <p class="category">Action</p>
+              <p class="category">Drama</p>
+              <p class="year-time">3h 05m</p>
+            </div>
+            <button type="button">
+              <i class="fa far fa-play-circle"></i>
+              Watch Now
+            </button>
+          </div>
+        </div>
+        <button class="arrow -left-arrow" id="left">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="arrow -right-arrow" id="right">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </header>
+    <div class="movies-content" id="movies">
+      <div class="container">
+        <h2 class="label">What's Popular</h2>
+        <div class="movies-details">
+          <!-- <div class="movies">
+            <img src="images/image1.jpg" alt="" />
+            <p class="movie-title">Joker</p>
+            <div class="short-desc">
+              <p class="year">2019</p>
+              <p class="rating">0.9</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- pagination -->
+    <div class="container">
+      <div class="paginations">
+        <ul>
+          <li>Previous</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>Next</li>
+        </ul>
+      </div>
+    </div>
+    <script defer src="app.js"></script>
+    <script defer src="js/main.js"></script>
+  </body>
+</html>

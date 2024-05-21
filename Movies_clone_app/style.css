@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
+body{overflow-x: hidden;}
+*{margin:0;padding:0;box-sizing: border-box;}
+:root{
+    --font-family:'Montserrat', sans-serif;
+    --primary-color:#17202a;
+    --second-color:#273746;
+    --light-gray-color:#ddd;
+    --white-color:#fff;
+    --green-color:#28b463;
+    --brown-color:#b1060f;
+}
+html{
+    scroll-behavior: smooth;
+}
+.label{
+    background-color: var(--second-color);
+    color: var(--light-gray-color);
+    border-left: 7px var(--brown-color) solid;
+    padding: 0.5rem;
+    
+}
+.container{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 3rem;
+}
+
+img{
+    display: block;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+/* ------Menu start */
+.menus{
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 10;
+    padding:1rem 0;
+    
+}
+.menus.sticky{
+    background-color:rgba(0,0,0,0.16);
+    color: var(--white-color);
+}
+nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.menus .logo img{
+    width:90px;
+    
+}
+.logo h2{
+    margin-left:0.3rem;
+    font-size: 3rem;
+    color: var(--white-color);
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--light-gray-color);
+    padding:0.4rem 1rem;
+    border-radius: 2px;
+    font-size: 1.1rem;
+}
+
+#form input{
+width:650px;
+outline: none;
+border: 0;
+padding:0.8rem 1.5rem;
+border-radius: 20px;
+font-family:inherit;
+background-color: var(--light-gray-color);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    
+    background-position: center center;
+    background-size: cover;
+    /* background-image: url('./images/IMG1.jpg'); */
+    transition: all 0.5s ease-in-out;
+}
+body{
+    height: 100vh;
+    background-color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+header::before{
+    
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.7);
+    
+}
+
+.slide-container{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16) 0 3px 6px rgba(0,0,0,0.23);
+    height: 70vh;
+    width: 70vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    
+}
+.slide{
+    border: 2px solid rgb(194, 99, 99);
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top:-15vh;
+    left:-15vw;
+    z-index: 1;
+    transform: translateX(-25%);
+    transition: all 0.7s ease-in;
+}
+
+.slide.active{
+    border: 2px solid red;
+    opacity: 1; 
+    transform: translateX(-0%);
+}
+
+.arrow{
+    position: absolute;
+    background-color: rgba(0,0,0,0.23);
+    color: #fff;
+    padding: 15px;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.arrow i{
+    font-size: 1.5rem;
+}
+.arrow:focus{
+    outline: none;
+}
+.-left-arrow{
+    left:0px;
+}
+.-right-arrow{
+    right:0px;
+}
+button{
+    outline: none;
+    border: none;
+}
+.slide-content{
+   
+    opacity: 0;
+    position: relative;
+    top:65%;
+    left:64%;
+    transform: translate(-0%,-50%);
+    padding:2rem 4rem 4rem 4rem;
+    background-color: rgba(0,0,0,0.23);
+  
+    transition: all 0.7s ease-in;
+}
+.slide-content.active{
+    opacity: 1;
+    transform: translate(-50%,-50%);
+
+}
+.slide-content h2{
+    color:var(--white-color);
+    font-size: 4rem;
+}
+.slide-content .movies-short-details{
+    color: var(--white-color);
+    padding:1rem;
+    width:50%;
+    letter-spacing:1px;
+}
+.slide-content .m_details{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: 1rem;
+}
+
+.m_details .category{
+    color: var(--white-color);
+    background-color: rgba(0,0,0,0.7);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.m_details .year-time{
+    color: var(--white-color);
+    background-color: rgba(0,0,0,0.7);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.slide-content button{
+    padding:0.7rem 2rem;
+    outline:none;
+    border: none;
+    margin: 2rem 1rem;
+    background-color: var(--brown-color);
+    color: var(--white-color);
+    font-family: inherit;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slide-content i{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+
+.label{
+    margin: 2rem 0;
+    
+}
+.movies-details,.Tv-details{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3.5rem;
+    row-gap: 2rem;
+}
+
+
+.movies,.tvShows{
+    width:325px;
+    height: 500px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.16);
+    cursor: pointer;
+   transition:all 0.4 ease-in;
+   background-color: var(--second-color);
+   position: relative; 
+   overflow: hidden;
+}
+.movies img{
+    display: block;
+    width: 325px;
+    height: 400px;
+}
+.tvShows img{
+    display: block;
+    width: 325px;
+    height: 400px;
+}
+.movie-title{
+    font-size: 1.2rem;
+    font-family: inherit;
+    margin: 1rem 1rem;
+    color: var(--white-color);
+}
+.short-desc{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--brown-color);
+    color: var(--white-color);
+    margin-top:1rem ;
+    font-weight: 600;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    transform: translateY(80%);
+}
+.short-desc p{
+    padding:0.5rem 0.5rem;
+}
+.movies:hover .short-desc{
+    transform: translateY(0%);
+    transition: all 0.5s ease-in;
+}
+.tvShows:hover .short-desc{transform: translateY(0%);
+    transition: all 0.5s ease-in;}
+/* pagination */
+.paginations{
+    padding:4rem 0;
+
+}
+.paginations ul{
+    display: flex;
+    list-style: none;
+}
+.paginations ul li{
+    margin:0 0.7rem;
+    box-shadow: 0 0 10px var(--second-color);
+    color: var(--green-color);
+    padding: 0.7rem 1.5rem;
+    cursor:pointer;
+    outline:none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in ;
+}
+.paginations ul li:nth-child(1){
+    margin-left: 0;
+}
+.paginations ul li:active{
+    transform: scale(1.5);
+}
+a{
+    color: var(--brown-color);
+}
