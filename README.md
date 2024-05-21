@@ -1,7 +1,5 @@
 # Movies_Clone
 
-Project: Cinematic Content Portal
-
 #### Overview
 Developed a comprehensive website that seamlessly integrates extensive movie and TV show data via API integration, providing users with an enriched and engaging experience. 
 
